@@ -1,0 +1,20 @@
+YEAR := 2025
+SEMESTER := 1
+
+{
+    STUDENT : @"Ivan Petrov";
+    AGE : 20;
+    YEAR : ^[YEAR];
+    SEMESTER : ^[SEMESTER];
+    GRADES : array(5, 4, 5, 5, 3);
+    SUBJECTS : array(@"Mathematics", @"Physics", @"Programming", @"English", @"History");
+    CONTACT : {
+        EMAIL : @"ivan.petrov@university.edu";
+        PHONE : @"+79991234567";
+        ADDRESS : {
+            CITY : @"Moscow";
+            STREET : @"Lenina";
+            BUILDING : 15;
+        };
+    };
+}

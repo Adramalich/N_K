@@ -1,0 +1,21 @@
+PORT := 8080
+HOST := @"localhost"
+TIMEOUT := 300
+
+{
+    SERVER : @"Web Server";
+    HOST : ^[HOST];
+    PORT : ^[PORT];
+    TIMEOUT : ^[TIMEOUT];
+    WORKERS : 4;
+    FEATURES : array(@"logging", @"caching", @"compression");
+    DATABASE : {
+        TYPE : @"postgresql";
+        HOST : @"db.example.com";
+        PORT : 5432;
+        CREDENTIALS : {
+            USER : @"admin";
+            PASSWORD : @"secret123";
+        };
+    };
+}
